@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="l40-Yr-7fk">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBP-FL-QBp">
+                                <rect key="frame" x="50" y="684" width="293" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Q6N-8Y-9Uh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Randomize">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="randomizeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hN-hm-oN7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tupil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBj-Oy-7Ip">
+                                <rect key="frame" x="50" y="386.66666666666669" width="293" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" translatesAutoresizingMaskIntoConstraints="NO" id="4vi-Gi-IEk">
+                                <rect key="frame" x="46.666666666666657" y="110" width="300" height="256.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4vi-Gi-IEk" secondAttribute="height" multiplier="311:266" id="Cbb-6F-unv"/>
+                                    <constraint firstAttribute="width" constant="300" id="X6x-YZ-V2d"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" text="Labelмпрмпрпрролтилоирпм" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbL-68-d88">
+                                <rect key="frame" x="50" y="437.66666666666669" width="293" height="18.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noA-rv-7VQ">
+                                <rect key="frame" x="50" y="476" width="293" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l40-Yr-7fk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Ie-5m-898"/>
+                            <constraint firstItem="MbL-68-d88" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="2wx-sT-8iB"/>
+                            <constraint firstItem="MbL-68-d88" firstAttribute="top" secondItem="KBj-Oy-7Ip" secondAttribute="bottom" constant="15" id="3h4-pT-y5P"/>
+                            <constraint firstItem="4vi-Gi-IEk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2b-tF-Qby"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MbL-68-d88" secondAttribute="trailing" constant="50" id="IAP-VP-ifi"/>
+                            <constraint firstItem="TBP-FL-QBp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="noA-rv-7VQ" secondAttribute="bottom" constant="50" id="LZx-jS-xIF"/>
+                            <constraint firstItem="noA-rv-7VQ" firstAttribute="top" secondItem="MbL-68-d88" secondAttribute="bottom" constant="20" id="Ns4-rB-FWW"/>
+                            <constraint firstItem="KBj-Oy-7Ip" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="OEv-Sl-rVR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KBj-Oy-7Ip" secondAttribute="trailing" constant="50" id="RoP-lT-uAe"/>
+                            <constraint firstItem="l40-Yr-7fk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WPV-Rp-9wT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TBP-FL-QBp" secondAttribute="bottom" constant="50" id="Wrz-a4-SLN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBP-FL-QBp" secondAttribute="trailing" constant="50" id="aeh-DZ-KvT"/>
+                            <constraint firstItem="l40-Yr-7fk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dLi-dx-bMz"/>
+                            <constraint firstItem="TBP-FL-QBp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="kfc-Ps-QFO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="noA-rv-7VQ" secondAttribute="trailing" constant="50" id="kl9-Ri-Zp5"/>
+                            <constraint firstAttribute="bottom" secondItem="l40-Yr-7fk" secondAttribute="bottom" id="mBc-ta-HBB"/>
+                            <constraint firstItem="KBj-Oy-7Ip" firstAttribute="top" secondItem="4vi-Gi-IEk" secondAttribute="bottom" constant="20" id="rVm-s4-Kz5"/>
+                            <constraint firstItem="4vi-Gi-IEk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="110" id="xuQ-3J-JQU"/>
+                            <constraint firstItem="noA-rv-7VQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="zlH-dR-oYc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="MbL-68-d88" id="OPL-3C-wM2"/>
+                        <outlet property="imageItem" destination="4vi-Gi-IEk" id="Ssa-9h-0l2"/>
+                        <outlet property="infoLabel" destination="noA-rv-7VQ" id="z2a-N2-ORG"/>
+                        <outlet property="nameLabel" destination="KBj-Oy-7Ip" id="Jlb-Rl-EHe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25.190839694656489" y="2.8169014084507045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="740" height="477"/>
+        <image name="rose" width="4256" height="2832"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
