@@ -72,6 +72,7 @@ if let input = readLine(), let value = Double(input) {
 }
 
 
+
 // Problem 4: Shopping List Manager
 // Simple console-based shopping list app using an array.
 
@@ -152,6 +153,7 @@ func fibonacci(_ n: Int) -> [Int] {
     return sequence
 }
 
+
 // Example test
 print(fibonacci(10))
 
@@ -230,6 +232,8 @@ func hasUniqueCharacters(_ text: String) -> Bool {
     }
     return true
 }
+
+
 
 print(hasUniqueCharacters("Swift"))
 print(hasUniqueCharacters("Hello"))
